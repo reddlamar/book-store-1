@@ -1,0 +1,242 @@
+.App {
+  text-align: center;
+  border: solid #282c34 3px;
+  border-radius: 6px;
+  margin: 9px;
+  position: relative;
+  background-color: #a9acb0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 9px;
+
+  width: 200px;
+
+  /* @media screen and (min-width: 640px) {
+    width: 300px;
+  } */
+
+  /* @media screen and (min-width: 768px) {
+    width: 200px;
+  } */
+
+  @media screen and (min-width: 1024px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+.page-header {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 24px;
+  width: 100%;
+  height: 100%;
+}
+
+.book-icon {
+  margin: 12px 0px;
+}
+
+.inner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  column-gap: 12px;
+  background-color: #000;
+}
+
+.menu-item {
+  font-weight: bold;
+  color: #fff;
+  padding: 3px 12px;
+
+  font-size: 1rem;
+}
+
+.menu-item:hover {
+  color: #00ffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.action-buttons {
+  position: absolute;
+  top: 6px;
+  right: 9px;
+  cursor: pointer;
+}
+
+.title-container,
+.publisher-container {
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 3px; */
+}
+
+.author-container {
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  column-gap: 6px;
+  padding: 3px 9px;
+  justify-content: center;
+  align-items: center;
+}
+
+.authors-header {
+  margin-bottom: 0px;
+}
+
+.authors {
+  height: 54px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+.authors-name {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.author-name {
+  margin: 0px;
+  font-size: 1rem;
+}
+
+.title,
+.name,
+.publisher-name {
+  margin: 0px;
+  margin-block: 0px;
+}
+
+.publisher {
+  margin-bottom: 0px;
+}
+
+.title,
+.publisher,
+.publisher-name,
+.name,
+.authors-header {
+  font-size: 1rem;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+}
+
+.add-book-form-container {
+  background-color: #282c34;
+  padding: 12px;
+  border-radius: 9px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.add-book-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.book-inputs,
+.submit-btn {
+  width: 300px;
+  height: 30px;
+}
+
+.publishers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  @media screen and (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
